@@ -11,7 +11,7 @@ type LinkedList struct {
 	head *Node
 }
 
-func (list *LinkedList) Insert(data any) {
+func (list *LinkedList) Insert(data interface{}) {
 	newNode := &Node{data: data}
 	if list.head == nil {
 		list.head = newNode
@@ -33,7 +33,7 @@ func (list *LinkedList) Display() {
 }
 
 // Third arg is bool, true deletes all matches, false deletes first match.
-func (list *LinkedList) Delete(data any, deleteAll bool) {
+func (list *LinkedList) Delete(data interface{}, deleteAll bool) {
 	current := list.head
 	if current == nil {
 		fmt.Println("Linked List is empty")
@@ -55,7 +55,7 @@ func (list *LinkedList) Delete(data any, deleteAll bool) {
 }
 
 // Third arg is bool, true updates all matches, false updates first match.
-func (list *LinkedList) Update(data, newData any, updateAll bool) {
+func (list *LinkedList) Update(data, newData interface{}, updateAll bool) {
 	current := list.head
 	if current == nil {
 		fmt.Println("Linked List is empty")

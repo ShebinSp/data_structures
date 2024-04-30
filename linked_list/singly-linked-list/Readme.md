@@ -16,7 +16,7 @@ This Go program provides an implementation of a singly linked list, a fundamenta
 
 1. Clone the repository:
 
-`git clone https://github.com/ShebinSp/go-linked-list.git`
+`git clone https://github.com/ShebinSp/data_structures.git`
 
 2. Navigate to the project directory:
 

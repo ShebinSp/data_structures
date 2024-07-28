@@ -1,0 +1,2 @@
+**Circular singly linked list**
+It is a singly linked list where the next of last node points back to the first node instead of being null. We can traverse a circular singly linked list until we reach the same node where we started. The circular singly linked list has no beginning or end. No null value is present in the next part of any of the nodes.
